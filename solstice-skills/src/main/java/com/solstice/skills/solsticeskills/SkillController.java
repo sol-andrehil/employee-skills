@@ -17,7 +17,7 @@ public class SkillController {
     }
 
     @GetMapping("/skills")
-    public Iterable<Skill> getSkills(@RequestParam("capability") String capability) {
+    public Iterable<Skill> getSkills(@RequestParam(value = "capability", required = false) String capability) {
         return skillService.getSkills(capability);
     }
 

@@ -1,5 +1,7 @@
-package com.solstice.employee.solsticeemployee;
+package com.solstice.employee.solsticeemployee.service;
 
+import com.solstice.employee.solsticeemployee.controller.EmployeeDetails;
+import com.solstice.employee.solsticeemployee.model.Employee;
 import org.springframework.stereotype.Service;
 
 @Service

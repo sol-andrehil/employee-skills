@@ -1,5 +1,8 @@
-package com.solstice.employee.solsticeemployee;
+package com.solstice.employee.solsticeemployee.service;
 
+import com.solstice.employee.solsticeemployee.controller.EmployeeDetails;
+import com.solstice.employee.solsticeemployee.model.Employee;
+import com.solstice.employee.solsticeemployee.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +15,9 @@ public class EmployeeService {
 
     private EmployeeRepository repository;
     private EmployeeConverter employeeConverter;
+
+    public EmployeeService() {
+    }
 
     @Autowired
     public EmployeeService(EmployeeRepository repository, EmployeeConverter employeeConverter) {
@@ -31,4 +37,5 @@ public class EmployeeService {
     public Iterable<Employee> getEmployeesByIds(Iterable<Long> ids) {
         return repository.findAllById(ids);
     }
+
 }

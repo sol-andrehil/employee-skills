@@ -1,4 +1,4 @@
-package com.solstice.employee.solsticeemployee;
+package com.solstice.employee.solsticeemployee.model;
 
 
 import javax.persistence.Entity;

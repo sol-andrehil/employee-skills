@@ -15,6 +15,6 @@ public class SkillsTest {
     @Test
     public void getSkills() {
         SkillService skillService = new SkillService(skillRepository);
-        Assert.assertNotNull(skillService.getSkills());
+        Assert.assertNotNull(skillService.getSkills(null));
     }
 }
